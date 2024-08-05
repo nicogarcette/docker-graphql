@@ -28,6 +28,7 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build -t ${{secrets.DOCKER_USER}}/docker-graphql:0.0.1 .
+        docker build -t ${{secrets.DOCKER_USER}}/docker-graphql:latest .
 
     - name: Push the Docker Image
       run: |
