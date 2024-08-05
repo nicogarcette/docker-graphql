@@ -32,6 +32,7 @@ jobs:
     - name: Push the Docker Image
       run: |
         docker push ${{secrets.DOCKER_USER}}/docker-graphql:0.0.1
+        docker push ${{secrets.DOCKER_USER}}/docker-graphql:latest
     
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag mitag:$(date +%s)
