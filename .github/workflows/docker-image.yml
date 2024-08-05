@@ -31,7 +31,7 @@ jobs:
 
     - name: Push the Docker Image
       run: |
-        docker push -t ${{secrets.DOCKER_USER}}/graphql-app:0.0.1 .
+        docker push ${{secrets.DOCKER_USER}}/graphql-app:0.0.1 .
     
   
     # - name: Build the Docker image
